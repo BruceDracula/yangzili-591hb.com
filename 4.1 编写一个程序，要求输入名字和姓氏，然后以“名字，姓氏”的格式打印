@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(void)
+{
+ char surname[20],firstname[20];
+ printf("Please input your firstname and surname:");
+ scanf("%s",firstname);
+ scanf("%s",surname);
+ printf("You are %s,%s.\n",firstname,surname);
+ return(0);
+} 
