@@ -1,0 +1,23 @@
+4.6 编写一个程序，设置一个值为1.0/3.0的double类型变量和一个值为1.0/3.0的float类型变量。每个变量的值显示三次：
+一次在小数点右侧显示4个数字，一次在小数点右侧显示12个数字，另一次在小数点右侧显示16个数字。同时要让程序包括
+float.h文件，并显示FLT_DIG和DBL_DIG的值。1.0/3.0的显示值与这些值一致吗？
+
+#include<stdio.h>
+#include<float.h>
+
+int main(void)
+{
+ double a=1.0/3.0;
+ float b=1.0/3.0;
+ printf("double a=1.0/3.0:\n");
+ printf("%.4e\n",a);
+ printf("%.12e\n",a);
+ printf("%.16e\n\n",a);
+ printf("float b=1.0/3.0:\n");
+ printf("%.4f\n",b);
+ printf("%.12f\n",b);
+ printf("%.16f\n\n",b);
+ printf("FLT_DIG:%d\n",FLT_DIG);
+ printf("DBL_DIG:%d\n",DBL_DIG);
+ return(0);
+} 
