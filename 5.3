@@ -1,0 +1,17 @@
+编写一个程序，该程序要求用户输入天数，然后将该值转换为周数和天数。例如，此程序将把18天转
+换成2周4天。用下面的格式显示结果：使用一个while循环让用户重复输入天数；当用户输入一个非正数（如0或-20）时，程序将终止循环。
+
+#include<stdio.h>
+#define WEEK 7
+
+int main(void)
+{
+ int days;
+ printf("Please input the days:");
+ scanf("%d",&days);
+ while(days>0)
+ {
+  printf("%d days are %d weeks,%d days.\n",days,days/WEEK,days%WEEK);
+  printf("Please input the days:");
+  scanf("%d",&days);
+ } 
