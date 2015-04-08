@@ -1,0 +1,19 @@
+编写一个程序，该程序要求输入一个float型数并打印该数的立方值。使用您自己设计的函数来计算该
+值的立方并且将它的立方打印出来。main()程序把输入的值传递给该函数。 
+
+#include<stdio.h>
+float cube(float);
+
+int main(void)
+{
+ float number;
+ printf("Please input the number:");
+ scanf("%f",&number);
+ printf("The cube of %f is %f\n",number,cube(number));
+ return(0);
+}
+
+float cube(float num)
+{
+ return(num * num * num);
+}
