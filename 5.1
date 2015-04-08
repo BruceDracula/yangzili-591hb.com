@@ -1,0 +1,20 @@
+编写一个程序。将用分钟表示的时间转换成以小时和分钟表示的时间。使用#define或者const来创建
+一个代表60的符号常量。使用while循环来允许用户重复键入值，并且当键入一个小于等于0的时间时终止
+循环。 
+
+#include<stdio.h>
+#define HOUR 60
+
+int main(void)
+{
+ int minutes;
+ printf("Please input the minutes:");
+ scanf("%d",&minutes);
+ while(minutes>0)
+ {
+  printf("%d hours and %d minutes\n",minutes/HOUR,minutes%HOUR);
+  printf("Please input the minutes:");
+  scanf("%d",&minutes);
+ }
+ return(0);
+}
