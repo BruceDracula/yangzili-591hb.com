@@ -1,0 +1,19 @@
+改写用来找到前20个整数之和的程序addemup.c（程序清单5.13）（如果您愿意，可以把addemup.c程序
+看成是一个计算如果您第一天得到$l，第二天得到$2，第三天得到$3，以此类推，您在20天里会挣多少钱
+的程序）。修改该程序，目的是您能交q地告诉程序计算将进行到哪里。也就是说，用一个读入的变量来
+代替20。 
+
+#include<stdio.h>
+
+int main(void)
+{
+ int count,sum,max;
+ count=0;
+ sum=0;
+ printf("Please input the max:");
+ scanf("%d",&max);
+ while(count++ < max)
+ sum = sum + count;
+ printf("sum = %d\n",sum);
+ return(0);
+} 
